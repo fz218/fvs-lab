@@ -1,0 +1,11 @@
+{
+  "experiment_id": "adaptive-20261101-01",
+  "runs": 27,
+  "groups": 9,
+  "repeats": 3,
+  "audited_queries": 5400,
+  "all_processes_exit_zero": true,
+  "policy_matches_base_frequencies": true,
+  "metrics_match_per_query_evidence": true,
+  "baseline_unchanged": true
+}

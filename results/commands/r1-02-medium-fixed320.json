@@ -1,0 +1,36 @@
+{
+  "repeat": 1,
+  "order": 2,
+  "bucket": "medium",
+  "configuration": "fixed320",
+  "command": [
+    "${LAB_ROOT}/optimization/build/search_yfcc_adaptive",
+    "uint8",
+    "${LAB_ROOT}/course_runs/indices/gateann/formal_1000000/yfcc",
+    "1",
+    "8",
+    "${LAB_ROOT}/datasets/yfcc_course_v1/formal_1000000/workloads/medium/query.u8bin",
+    "${LAB_ROOT}/datasets/yfcc_course_v1/formal_1000000/base.metadata.spmat",
+    "${LAB_ROOT}/datasets/yfcc_course_v1/formal_1000000/workloads/medium/query.metadata.spmat",
+    "${LAB_ROOT}/datasets/yfcc_course_v1/formal_1000000/workloads/medium/ground_truth.ids.ibin",
+    "10",
+    "l2",
+    "pq",
+    "8",
+    "0",
+    "0",
+    "32",
+    "320",
+    "--policy=fixed",
+    "--target=32.0",
+    "--ceiling=8192",
+    "--audit=${LAB_ROOT}/course_runs/optimization/adaptive-20261101-01/r1-02-medium-fixed320/queries.csv"
+  ],
+  "environment_overrides": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1"
+  },
+  "exit_code": 0,
+  "elapsed_seconds": 15.3873490979895,
+  "peak_rss_kib": 417108
+}

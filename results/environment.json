@@ -1,0 +1,30 @@
+{
+  "experiment_id": "adaptive-20261101-01",
+  "repeats": 3,
+  "buckets": [
+    "low",
+    "medium",
+    "high"
+  ],
+  "seed": 20261101,
+  "target": 32.0,
+  "ceiling_L": 8192,
+  "threads": 1,
+  "beamwidth": 8,
+  "k": 10,
+  "io_backend": "aio",
+  "full_adj_neighbors": 32,
+  "mem_L": 0,
+  "cache_budget": 0,
+  "kernel": "Linux 6.18.33.2-microsoft-standard-WSL2; Ubuntu 24.04",
+  "binary_sha256": "307f347f75a1fa9e773edf2a5fd15a3867a8c809bbf8bf8359a094273649fb0f",
+  "frequency_source": "base metadata only; no ground truth used by policy",
+  "source": {
+    "base_file": "tests/search_disk_index_yfcc.cpp",
+    "base_commit": "71e87cbf0e25c0400c0109dd25a64a7c4dccc9dd",
+    "base_sha256": "37ad5939b62749e2e48ed4c1fa944e94b1bf43edeed65782e29a26293207600d",
+    "generated_sha256": "770607a58e49163b281efdda76cd89d372d2301be1d96f6b6be679289f4b9dbd"
+  },
+  "ordering": "shuffle all (bucket, policy) pairs separately within each repeat",
+  "repeat_note": "same queries, repeated processes; not independent dataset samples"
+}
